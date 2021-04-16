@@ -1,0 +1,63 @@
+body{
+    background-color: rgba(210, 255, 255, 0.4);
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#form_vehicle{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    text-align: center;
+}
+
+#form_wrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.form_item {
+    padding: 20px;
+    width: auto;
+}
+
+#list_output {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.list_item{
+    margin: 20px;
+    padding: 10px;
+    border: 2px solid blue;
+    background: rgb(129, 202, 250);
+    width: 200px;
+}
+
+button {
+    width: 80px;
+    height: 35px;
+    background-color: rgba(0, 0, 255, 0.568);
+    color: white;
+}
+
+
+button:hover {
+    border: 2px solid black;
+    color: black;
+}
+
+#button_delete {
+    background-color: red;
+}
+
+#button_delete:hover {
+    border: 4px solid black;
+    color: black;
+}
+
+#aside_delete {
+    display:flex;
+    justify-content:left;
+}

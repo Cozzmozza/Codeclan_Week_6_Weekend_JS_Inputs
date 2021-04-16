@@ -5,39 +5,77 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="js/app.js"></script>
+    <link rel="stylesheet" href="css/main.css">
     <title>Fleet Manager</title>
 </head>
 <body>
     
     <form id='form_vehicle'>
-        <h2>Enter Vehicle Data Here:</h2>
-        <label for="vehicle_type">Type: </label>
-        <select id="vehicle_type">
-            <option value="Car">Car</option>
-            <option value="Van">Van</option>
-            <option value="Motorbike">Motorbike</option>
-            <option value="Other">Other</option>
-        </select>
-        
-        <label for="vehicle_make">Manufacturer: </label>
-        <input type="text" id='vehicle_make'>
+        <h2>Enter Vehicle Data Below, and Enjoy the Show</h2>
+        <div id='form_wrapper'>
+            <div class='form_item'>
+                <label for="vehicle_type">Type: </label>
+                <select id="vehicle_type">
+                    <option value="Car">Car</option>
+                    <option value="Van">Van</option>
+                    <option value="Motorbike">Motorbike</option>
+                    <option value="Other">Other</option>
+                </select>
+            </div>
 
-        <label for="vehicle_model">Model:</label>
-        <input type="text" id='vehicle_model'>
+            <div class='form_item'>
+                <label for="vehicle_make">Manufacturer: </label>
+                <input type="text" id='vehicle_make'>
+            </div>
 
-        <label for="vehicle_year">Model Year: </label>
-        <input type="text" id='vehicle_year'>
+            <div class='form_item'>
+                <label for="vehicle_model">Model:</label>
+                <input type="text" id='vehicle_model'>
+            </div>
 
-        <button type='submit'>Submit</button>
+            <div class='form_item'>
+                <label for="vehicle_year">Model Year: </label>
+                <input type="text" id='vehicle_year'>
+            </div>
+
+            <div class='form_item'>
+                <label for="vehicle_nickname">Nickname: </label>
+                <input type="text" id='vehicle_nickname'>
+            </div>
+            <div class='form_item'>
+                <button type='submit'>Submit</button>
+            </div>
+        </div>
     </form>
 
-    <article>
-        <h4>Delete All</h4>
+    <ul id='list_output'>
+        <!-- Some sample data to help with our CSS styling -->
+        <li class='list_item'>
+            <h3>Nickname: Vandalf</h3>
+            <h4>Type: Van</h4>
+            <h4>Manufacturer: Volkswagen</h4>
+            <h4>Model: Transporter T4</h4>
+            <h4>Year: 1998</h4>
+        </li>
+        <li class='list_item'>
+            <h3>Nickname: Zazzles</h3>
+            <h4>Type: Car</h4>
+            <h4>Manufacturer: Nissan</h4>
+            <h4>Model: 300ZX Z32 TT</h4>
+            <h4>Year: 1990</h4>
+        </li>
+        <li class='list_item'>
+            <h3>Nickname: Sooty</h3>
+            <h4>Type: Motorbike</h4>
+            <h4>Manufacturer: Suzuki</h4>
+            <h4>Model: Bandit 600</h4>
+            <h4>Year: 2001</h4>
+        </li>
+    </ul>
+
+    <aside id='aside_delete'>
         <button type='delete' id='button_delete'>Delete All</button>
-    </article>
-
-    <ul id='form_output_list'></ul>
-
+    </aside>
 
 </body>
 </html>
